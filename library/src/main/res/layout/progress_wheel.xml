@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="all">
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rectangle_radius10_01"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.le.library.loading.ProgressWheel
+            android:id="@+id/progressWheel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            ProgressWheel:pwBarColor="@android:color/white"
+            ProgressWheel:pwBarLength="20dp"
+            ProgressWheel:pwBarWidth="3dp"
+            ProgressWheel:pwRimColor="#bfc3c6"
+            ProgressWheel:pwRimWidth="3dp"
+            ProgressWheel:pwSpinSpeed="2dp" />
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+</LinearLayout>

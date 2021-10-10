@@ -1,0 +1,4 @@
+rootProject.name = "Multifunction"
+include ':app'
+
+include ':library'
